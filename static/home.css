@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #d1d1d1;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.logo img {
+    height: 100px;
+    margin-left: 355px;
+}
+
+.logo2 img {
+    height: 100px;
+    margin-left: 140px; 
+}
+
+.logo3 img {
+    height: 100px;
+    margin-left: 130px; 
+}
+.school-info {
+    flex: 1;
+}
+
+.school-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.school-info h2 {
+    font-size: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+nav {
+    background: rgb(22, 61, 119);
+    padding: 1rem 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#readmore {
+    list-style: none; /* Not necessary anymore */
+    display: inline-block; /* Ensures it respects margin and padding correctly */
+    margin: 0 1rem;
+    text-decoration: none; /* Removes underline */
+    color: #00509e; /* Add desired color */
+    cursor: pointer;
+}
+
+#readmore:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+
+section.banner {
+    position: relative;
+    overflow: hidden;
+    margin-left: -11px;
+    width: 102%;
+    height: 500px; /* Adjust height as needed */
+}
+
+.banner-images {
+    display: flex;
+    width: 300%; /* Adjust width based on the number of images */
+    animation: slide 15s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+section.banner img {
+    width: 100%;
+    height: 100%; /* Ensure images cover the entire banner area */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Adjust keyframe animation for sliding */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-5000px); } /* Adjusted to loop seamlessly */
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    color: #003366;
+    animation: fadeIn 1s ease-out;
+}
+
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0; }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#notice-board {
+    text-align: center;
+    padding: 2rem;
+}
+
+.notice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.notice-item {
+    background-color: #d1d1d1;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 300px;
+}
+
+.notice-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+#headmaster-photos {
+    text-align: center;
+    padding: 2rem;
+}
+
+.photos-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.headmaster-photo,
+.assistant-headmaster-photo {
+    width: 200px;
+}
+
+.headmaster-photo img,
+.assistant-headmaster-photo img {
+    width: 100%;
+    height: 350px;
+    /* border-radius: 50%; */
+    border: 3px solid #000a14;
+}
+
+.headmaster-photo p,
+.assistant-headmaster-photo p {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+#dress-code {
+    text-align: center;
+    padding: 2rem;
+}
+
+.dress-code-photos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.dress-code-item {
+    width: 200px;
+}
+
+.dress-code-item img {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    border: 3px solid #000a14;
+}
+
+.dress-code-item p {
+    margin-top: 1rem;
+    font-weight: bold;
+    
+}
+.notice-item {
+    background-color: #e6d8d8;
+    border: 1px solid #d1d1d1;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 300px;
+    text-align: center; /* Center align the content */
+    color: black;
+}
+
+.notice-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem; /* Adjust font size as needed */
+    color: #000000; /* Set the color of the heading */
+}
+
+.notice-item img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center align the image */
+    width: 100%; /* Make the image responsive within its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Add rounded corners to the image */
+    box-shadow: 0 0 5px rgba(5, 5, 5, 0.2); /* Add a subtle box shadow */
+}
+#about {
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+#about h2 {
+    color: #003366; /* Set color for the heading */
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Increase font size for the heading */
+}
+
+#about p {
+    /* line-height: 1.6; Set line height for better readability */
+    color: #333; /* Set color for the text */
+    /* text-align:left; */
+    /* max-width: 600px;  */
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 1rem;
+    }
+    #about h2 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+}
+
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    margin-bottom: 2rem;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-text h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem; /* Increase font size for heading */
+}
+
+.welcome-text p {
+    color: #333;
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+.video {
+    flex: 1;
+    margin-left: 2rem;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.video iframe {
+    width: 100%;
+    height: 400px;
+    border: none; /* Remove default iframe border */
+}
+
+
+#events {
+    padding: 2rem;
+}
+
+#events h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.event-item {
+    flex: 1 0 calc(33.33% - 1rem); /* Adjust width as needed */
+}
+
+.event-item img {
+    width: 500px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.event-description {
+    background-color: #e6d8d8;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+}
+
+.event-description h3 {
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.event-description p {
+    color: #333;
+}
