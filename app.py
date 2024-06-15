@@ -13,4 +13,3 @@ def about():
 def academic():
     return render_template("academic.html")
 
-app.run(debug=True)
