@@ -12,4 +12,7 @@ def about():
 @app.route('/academic')
 def academic():
     return render_template("academic.html")
+@app.route('/admission')
+def admission():
+    return render_template("admission.html")
 
