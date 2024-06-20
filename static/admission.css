@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #d1d1d1;
+}
+
+header {
+    background: #003366;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.logo img {
+    height: 100px;
+    margin-left: 355px;
+}
+
+.logo2 img {
+    height: 100px;
+    margin-left: 140px; 
+}
+
+.logo3 img {
+    height: 100px;
+    margin-left: 130px; 
+}
+.school-info {
+    flex: 1;
+}
+
+.school-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeInDown 1s ease-out;
+}
+
+.school-info h2 {
+    font-size: 1rem;
+    animation: fadeInUp 1s ease-out;
+}
+
+nav {
+    background: rgb(22, 61, 119);
+    padding: 1rem 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+#readmore {
+    list-style: none; /* Not necessary anymore */
+    display: inline-block; /* Ensures it respects margin and padding correctly */
+    margin: 0 1rem;
+    text-decoration: none; /* Removes underline */
+    color: #00509e; /* Add desired color */
+    cursor: pointer;
+}
+
+#readmore:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00509e;
+    border-radius: 5px;
+}
+
+main {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}     
+/* About Section Styles */
+#about {
+    display: flex;
+    flex-direction: column; /* Ensure vertical alignment */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+#about h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#about p {
+    color: #333;
+    /* line-height: 1.6; */
+    text-align: left;
+    /* max-width: 600px; */
+    /* margin-bottom: 1rem; */
+}
+
+/* Monumental Information Styles */
+#monumental-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+#monumental-info h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-table {
+    display: table;
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+#teacher-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+#teacher-info h2 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-table {
+    display: table;
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.header .table-cell {
+    font-weight: bold;
+    background-color: #a4aec7;
+}
+
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+#message-from-chairman {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #e6d8d8;
+    margin-top: 2rem;
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    height: -100px;
+}
+
+.message-text {
+    flex: 1;
+}
+
+.message-text h2 {
+    color: #003366;
+    font-size: 1.5rem; /* Increase font size for heading */
+}
+
+.message-text p {
+    max-width: 900px;
+    color: #333;
+    line-height: 1.6; /* Increase line height for better readability */
+}
+
+.message-image img {
+    display: inline  ;
+    width: 200px; /* Adjust size as needed */
+    margin-left: 1000px; /* Add space between text and image */
+    margin-top: -600px;
+    
+    align-items: top;
+}   
